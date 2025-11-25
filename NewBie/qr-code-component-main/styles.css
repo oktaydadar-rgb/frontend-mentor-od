@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  /* colors */
+  --clr-state-900: #1f314f;
+  --clr-state-500: #68778d;
+  --clr-state-300: #d5e1ef;
+  --clr-white: #ffffff;
+  /* fonts */
+  --ff--outfit: "Outfit", system-ui, sans-serif;
+  /* font sizes */
+  --fs-22px: 1.375rem;
+  --fs-15px: 0.9375rem;
+  /* font weight */
+  --fw--bold: 700;
+  --fw--regular: 500;
+  /*spacing*/
+  --sp-40px: 2.5rem;
+  --sp-24px: 1.5rem;
+  --sp-16px: 1rem;
+}
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+html {
+  background-color: var(--clr-state-300);
+  color: var(--clr-state-900);
+  font-family: var(--ff--outfit);
+  font-size: var(--fs-15px);
+  font-weight: var(--fw--regular);
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+.card-wrapper {
+  max-width: 320px;
+  border-radius: 20px;
+  padding: var(--sp-16px) var(--sp-16px) var(--sp-40px) var(--sp-16px);
+
+  background-color: var(--clr-white);
+
+  @media screen and (max-width: 30rem) {
+    margin-inline: 27.5px;
+  }
+
+  .qr-image {
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  .card-content {
+    margin-top: 24px;
+    .title {
+      font-size: var(--fs-22px);
+      color: var(--clr-state-900);
+      font-weight: var(--fw--bold);
+      line-height: 1.2;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 16px;
+      font-size: var(--fs-15px);
+      color: var(--clr-state-500);
+      font-weight: var(--fw--regular);
+      line-height: 1.4;
+      letter-spacing: 0.0125rem;
+      text-align: center;
+    }
+  }
+}
