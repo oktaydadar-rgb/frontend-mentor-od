@@ -59,6 +59,14 @@
   margin: 0;
 }
 
+html {
+  background-color: var(--clr-rose-100);
+  color: var(--clr-stone-900);
+  font-family: var(--ff-Outfit);
+  font-size: var(--fs-16px);
+  letter-spacing: 0px;
+}
+
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
   html {
