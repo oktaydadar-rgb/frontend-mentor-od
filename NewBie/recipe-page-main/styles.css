@@ -63,6 +63,7 @@
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
   }
 }
 
@@ -81,6 +82,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* 7. Inherit fonts for form controls */
@@ -113,14 +115,6 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
-}
-
-/*
-  10. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
 }
 
 .attribution {
