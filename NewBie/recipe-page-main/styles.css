@@ -36,6 +36,14 @@
   --fw-normal: 400;
   --fw-bold: 700;
   --fw-semibold: 600;
+  /*spacing */
+  --spacing-128px: 8rem;
+  --spacing-48px: 3rem;
+  --spacing-32px: 2rem;
+  --spacing-24px: 1.5rem;
+  --spacing-16px: 1rem;
+  --spacing-12px: 0.75rem;
+  --spacing-8px: 0.5rem;
 }
 
 .attribution {
