@@ -80,6 +80,9 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
 }
 
 /* 6. Improve media defaults */
