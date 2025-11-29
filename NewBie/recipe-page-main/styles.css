@@ -14,6 +14,17 @@
   font-style: normal;
 }
 
+:root {
+  --clr-rose-800: #7a284e;
+  --clr-rose-50: #fff7fb;
+  --clr-stone-900: #312e2c;
+  --clr-stone-600: #5f564d;
+  --clr-stone-150: #e3ddd7;
+  --clr-stone-100: #f3e5d7;
+  --clr-brown-800: #854632;
+  --clr-white: #ffffff;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
