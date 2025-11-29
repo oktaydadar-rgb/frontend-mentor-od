@@ -32,6 +32,10 @@
   --fs-28px: 1.75rem;
   --fs-20px: 1.25rem;
   --fs-16px: 1rem;
+  /* Font weight */
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fw-semibold: 600;
 }
 
 .attribution {
