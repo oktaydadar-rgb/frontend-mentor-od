@@ -1,0 +1,12 @@
+main {
+  display: grid;
+  /* Example: Creates a single column that is at most 1200px wide and centered */
+  grid-template-columns: minmax(0, 1200px);
+  justify-content: center;
+
+  /* Optional: Adds a gap between child elements */
+  gap: 0.25rem;
+
+  /* Optional: Adds padding around the main container */
+  padding: 1rem;
+}
