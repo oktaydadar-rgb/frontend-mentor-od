@@ -27,6 +27,11 @@
   /* Font Families */
   --ff-Youngserif: "Young Serif", system-ui, sans-serif;
   --ff-Outfit: "Outfit", system-ui, sans-serif;
+  /* Font size */
+  --fs-40px: 2.5rem;
+  --fs-28px: 1.75rem;
+  --fs-20px: 1.25rem;
+  --fs-16px: 1rem;
 }
 
 .attribution {
